@@ -17,7 +17,7 @@ a {
 
 }
 .margen-interno{
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
     .header{
@@ -34,16 +34,18 @@ a {
             flex-flow: row nowrap;
             height: 60px;
             align-items: center;
-            border-bottom: 1px solid rgba(255,255,255,.5)
+            border-bottom: 1px solid rgba(255,255,255,.5);
+        
         }
             .nav{
-            
+            display: flex;
             flex: 5 1 auto;
-           
+            justify-content: flex-end;
+            
             }
                 .nav a{
                     color: #fff;
-                    font-size: 11px;
+                    font-size: 14px;
                     text-transform: uppercase;
                     padding: 0 10px;
                     letter-spacing: 2px;
@@ -56,6 +58,7 @@ a {
            
             flex: 1 1 auto;        
             display: flex;          
+            justify-content: flex-end;
             }
                 .social a{
                     font-size: 18px;
@@ -71,7 +74,7 @@ a {
             }
                 .logo a{
                     color: #fff;
-                    font-size: 25px;
+                    font-size: 30px;
                 }
                 .logo a:hover{
                     color: #b1b1b1;
@@ -219,6 +222,13 @@ a {
     @media all and (max-width:600px){
         .article{
             flex-direction: column;
+        }
+    }
+
+    @media all and (max-width:519px){/*en vez de column pordría hacer haburguesa*/
+        .nav{
+            flex-direction: column;
+            
         }
     }
     @media all and (max-width: 400px){
