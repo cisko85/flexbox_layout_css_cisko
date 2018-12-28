@@ -37,10 +37,22 @@ a {
             border-bottom: 1px solid rgba(255,255,255,.5);
         
         }
+            #btn-menu{
+                display: none;
+            }
+
+            .hamburguer{
+            font-size: 25px;
+            color:#fff;
+            align-items: center;
+                
+            }
+            
             .nav{
             display: flex;
             flex: 5 1 auto;
             justify-content: flex-end;
+            align-items: center;
             
             }
                 .nav a{
@@ -49,6 +61,7 @@ a {
                     text-transform: uppercase;
                     padding: 0 10px;
                     letter-spacing: 2px;
+                    
                 }
                 .nav a:hover{
                     color: #b1b1b1;
@@ -225,7 +238,7 @@ a {
         }
     }
 
-    @media all and (max-width:519px){/*en vez de column pordría hacer haburguesa*/
+    @media all and (max-width:519px){/*en vez de elementos a en  column pordría hacer haburguesa*/
         .nav{
             flex-direction: column;
             
