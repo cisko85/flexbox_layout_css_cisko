@@ -217,7 +217,7 @@ a {
 
     
         /* desde aquí los mediaquery. Precionar crtl+shift+m en el navegador para comprobar efectos en las diferentes medidas. */
-    @media all and (max-width:948px){/* 948 depende de cuando el nava se acomoda hacia abajo*/
+    @media all and (max-width:948px){/* 948 depende de cuando el nav a se acomoda hacia abajo*/
         .section{
             flex-direction: column;
         }
@@ -243,15 +243,40 @@ a {
         }
     }
 
-    @media only screen and (max-width: 520px){
+    /* @media only screen and (max-width: 520px){ */
+        @media all and (max-width:520px){
+        .logo{
+            text-align: center;
+            /* justify-content: flex-start;
+            display: inline; */
+        }
+        /* .hamburguer{
+            justify-content: flex-end;
+            align-items: flex-end;
+            display: inline; }*/
+
+        
         label{
           display: block;
             cursor:pointer;
+           
+        
         }    
         .nav{
+            /* display: block; */
+            text-align: center;
+            /* flex-direction: column; */
+            flex-flow: column nowrap;
+           
+            
+        }
+        .nav a{
+            border: 1px solid rgba(255,255,255,.5); 
+            width: 100vh;
+        }
+        #toggle:checked + .nav{
             display: block;
-            align-items: center;
-            flex-direction: column;
-            border-bottom: 1px solid rgba(255,255,255,.5); 
         }
     }
+    
+  
